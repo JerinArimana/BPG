@@ -1,0 +1,18 @@
+@use "../util/" as u;
+
+
+.header{
+  padding: u.rem(16) u.rem(0);
+  position: fixed;
+  width: 100%;
+  left: u.rem(0);
+  top: u.rem(0);
+  background-color: white;
+  z-index: 10;
+  &__brand{
+    width: 48px;
+    height: 48px;
+    display: block;
+    padding: u.rem(0);
+  }
+}

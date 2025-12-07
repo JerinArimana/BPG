@@ -1,0 +1,31 @@
+
+@use 'functions' as f;
+
+@mixin flexprob($display, $direction, $justify, $align-item) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align-item;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+
+@mixin commoncode($par1, $lterSp) {
+    color: #222f3e;
+    font-size: $par1;
+    letter-spacing: $lterSp;
+}
+
+@mixin borderRadious($Bwidth, $Bcolor, $radius){
+    border: f.rem($Bwidth) solid $Bcolor;
+    border-radius: f.rem($radius);
+}
+
+@mixin flexGrid ($display, $justifycontent, $alignitems, $flexdirection){
+    display: $display;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+    flex-direction: $flexdirection;
+    flex-wrap: wrap;
+    
+}

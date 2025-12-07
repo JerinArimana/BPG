@@ -76,10 +76,6 @@ a:active {
 
 .header {
   padding: 1rem 0rem;
-  position: fixed;
-  width: 100%;
-  left: 0rem;
-  top: 0rem;
   background-color: white;
   z-index: 10;
 }
@@ -198,7 +194,7 @@ a:active {
 }
 @media (max-width: 968px) {
   .footer {
-    padding: 60px 20px;
+    padding: 60px 0px;
   }
   .footer__container {
     gap: 60px;
@@ -230,7 +226,7 @@ a:active {
 }
 @media (max-width: 640px) {
   .footer {
-    padding: 40px 15px;
+    padding: 40px 0px;
   }
   .footer__left {
     gap: 20px;
@@ -261,12 +257,7 @@ a:active {
   margin: 0 auto;
 }
 
-.main {
-  padding-top: 80px;
-}
-
 .build {
-  padding: 60px 0;
   /* Image Animation */
   /* Text Animation */
 }
@@ -274,7 +265,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 120px;
-  height: 100vh;
+  height: 80vh;
 }
 .build__image {
   display: flex;
@@ -313,6 +304,11 @@ a:active {
   margin-bottom: 20px;
   color: #000;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .build__text h1 {
+    font-size: 1.75rem;
+  }
 }
 .build__text p {
   font-size: 1rem;
@@ -383,6 +379,7 @@ a:active {
 }
 .playbook__right p {
   font-size: 1.75rem;
+  font-size: clamp(1.125rem, 2.5vw, 1.75rem);
   line-height: 140%;
   color: #111;
   font-weight: 500;
@@ -395,7 +392,7 @@ a:active {
   }
 }
 .playbook__image {
-  height: 37.5rem;
+  height: 31.25rem;
   overflow: hidden;
   border-radius: 0.25rem;
 }
@@ -406,6 +403,9 @@ a:active {
      object-fit: cover;
 }
 @media (max-width: 767px) {
+  .playbook__image {
+    height: auto;
+  }
   .playbook__image img {
     border-radius: 12px;
   }
@@ -474,6 +474,7 @@ a:active {
     grid-template-columns: 1fr;
     text-align: left;
     height: 100%;
+    gap: 35px;
   }
   .build__text p {
     max-width: 100%;
@@ -481,9 +482,6 @@ a:active {
 }
 /* ✅ Small Mobile */
 @media (max-width: 480px) {
-  .build {
-    padding: 50px 16px;
-  }
   .build__text h2 {
     font-size: 24px;
   }
@@ -515,6 +513,13 @@ a:active {
   font-size: 64px;
   font-weight: 500;
   color: #000000;
+  padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .services .service__headerTitle {
+    font-size: 2.375rem;
+    padding-bottom: 20px;
+  }
 }
 .services .service__contentWrapper {
   display: flex;
@@ -582,12 +587,6 @@ a:active {
   }
 }
 @media (max-width: 640px) {
-  .container {
-    padding: 40px 15px;
-  }
-  .header {
-    margin-bottom: 40px;
-  }
   .header__title {
     font-size: 1.75rem;
   }
@@ -646,7 +645,7 @@ a:active {
 /* Responsive Design */
 @media (max-width: 968px) {
   .benefits-section {
-    padding: 60px 20px;
+    padding: 60px 0px;
   }
   .benefits-section__grid {
     gap: 60px;
@@ -669,7 +668,7 @@ a:active {
 }
 @media (max-width: 640px) {
   .benefits-section {
-    padding: 40px 15px;
+    padding: 40px 0px;
   }
   .benefits-section__grid {
     gap: 40px;
